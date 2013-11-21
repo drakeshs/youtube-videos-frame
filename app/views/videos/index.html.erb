@@ -1,0 +1,17 @@
+
+
+
+
+<br>
+
+<% link_to 'New Video', new_video_path %>
+ 
+<% @videos.each do |vi| %>
+
+
+ <iframe width="420" height="345"
+src="<%= vi.link %>">
+</iframe>
+
+
+<% end %>
